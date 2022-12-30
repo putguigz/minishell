@@ -1,5 +1,7 @@
 # minishellrose ☎️
 
+<img src="./gif/minishell.gif" align="center" width=80%>
+
 ## description
 
 the goal of this project was to implement a **shell** of our own, with basics built-ins and binaries execution.\
@@ -20,9 +22,11 @@ This project introduced us to new concepts or allowed us to deepen our knowledge
 
 ## try it!
 
-it's easy to try: 
-1. just `git clone git@github.com:putguigz/minishell.git`
-2. compile with our makefile `make`
+it's easy to try:
+1. **clone** the project with this command line: `git clone git@github.com:putguigz/minishell.git`
+2. **libraries**
+    - you might have to install cmake, ndevel-curses and other missing libraries with your package manager (homebrew / dnf / apt etc...)
+    - compile with our makefile : just type in `make`
 3. then launch the binary, and try our shell (it takes no arguments) `./minishell`
 
 ## credentials
