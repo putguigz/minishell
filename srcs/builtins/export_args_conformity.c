@@ -72,14 +72,12 @@ char	*create_substring(char *ref)
 int	check_duplicate(t_list *list, char *ref)
 {
 	t_list	*tmp;
-	int		count;
 	char	*str;
 
 	str = create_substring(ref);
 	if (!str)
 		return (ERR);
 	tmp = list;
-	count = 0;
 	while (tmp)
 	{
 		if (!ft_strcmp(((t_var *)tmp->content)->var, str))
@@ -88,7 +86,6 @@ int	check_duplicate(t_list *list, char *ref)
 			return (1);
 		}
 		tmp = tmp->next;
-		count++;
 	}
 	free(str);
 	return (0);

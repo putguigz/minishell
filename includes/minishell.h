@@ -117,7 +117,7 @@ typedef struct s_big
 }	t_big;
 
 //DECLARE OF A GLOBAL STRUCT, MANDATORY FOR TERMCAPS MANAGMENT 
-t_global				g_tcaps;
+extern t_global			g_tcaps;
 
 //ENV
 int						ft_env(char **av, t_big *datas);

@@ -100,7 +100,6 @@ char	*get_var_quotes(char *input, int *i, char *new, int *start)
 char	*get_double_quote(char *input, int *i, int j)
 {
 	char	*new;
-	char	*tmp;
 	int		start;
 
 	new = ft_substr(input, j, *i - j);
@@ -114,7 +113,6 @@ char	*get_double_quote(char *input, int *i, int j)
 		if (!new)
 			return (0);
 	}
-	tmp = new;
 	new = get_first_quote(new, input, i, start);
 	if (!(new))
 		return (0);

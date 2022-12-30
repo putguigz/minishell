@@ -60,9 +60,6 @@ void	execute_tree(t_node *root, int parent, t_big *datas, int side)
 
 void	executions(t_big *datas)
 {
-	int	i;
-
-	i = 0;
 	datas->flag_pipe = 0;
 	datas->fd = dup(STDIN_FILENO);
 	execute_tree(datas->root, 0, datas, 0);

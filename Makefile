@@ -16,7 +16,7 @@ CC = clang
 
 CFLAGS = -Wall -Wextra -Werror
 
-IFLAGS = -I${INC_DIR}
+IFLAGS = -Iincludes
 
 LIBFT = -Llibft -lft -ltermcap
 
@@ -38,12 +38,11 @@ SRCS = $(addprefix srcs/, main.c input/read_input.c lexer/lexer.c lexer/quotes.c
 	builtins/export_args_conformity.c builtins/export_printer.c ast/exec_binary_input_tabs.c \
 	grammar/pipe_utils.c input/line_creation.c input/line_creation_2.c)
 
-INC_DIR = includes
 
 OBJS = $(SRCS:.c=.o)
 
 %.o: %.c
-	$(CC) $(IFLAGS) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) $(IFLAGS) -c $< -o $@
 
 all: $(NAME)
 

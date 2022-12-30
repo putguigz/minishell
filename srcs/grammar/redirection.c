@@ -113,12 +113,10 @@ int	exec_double_anglebracket_right(char **argv, t_big *datas)
 
 void	redirections(int type, char **argv, t_big *datas)
 {
-	int	ret;
-
 	if (type == 2)
-		ret = exec_double_anglebracket_right(argv, datas);
+		exec_double_anglebracket_right(argv, datas);
 	else if (type == 3)
-		ret = exec_anglebracket_right(argv, datas);
+		exec_anglebracket_right(argv, datas);
 	else if (type == 4)
-		ret = exec_anglebracket_left(argv, datas);
+		exec_anglebracket_left(argv, datas);
 }

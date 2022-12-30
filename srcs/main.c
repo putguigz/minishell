@@ -12,6 +12,8 @@
 
 #include "minishell.h"
 
+t_global	g_tcaps;
+
 void	actualize_data(t_big *datas)
 {
 	clean_datas(datas);
