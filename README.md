@@ -1,6 +1,6 @@
 # minishellrose ☎️
 
-<img src="./gif/minishell.gif" align="center" width=80%>
+<img src="./gif/minishell.gif" align="center" width=90%>
 
 ## description
 
